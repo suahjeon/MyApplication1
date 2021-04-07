@@ -32,9 +32,11 @@ public class LocProviderListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String s = "";
-                for(int i =0; i < locProviders.size(); i++){
-                    s += "Loc.Provider" + locProviders.get(i)+ "\n"
-                            + "Status : " + locMgr.isProviderEnabled(locProviders.get(i)) + "\n\n";
+                String[] array = new String[0];
+                for(String i : array){
+                    System.out.println(s);
+                    System.out.println("Loc.Provider" + locProviders.get(0) + "\n"
+                            + "Status : " + locMgr.isProviderEnabled(locProviders.get(0)) + "\n\n");
                 }
                 mTextView.setText(s);
 
